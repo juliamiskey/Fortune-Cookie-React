@@ -1,0 +1,120 @@
+/*  GENERAL STYLES */
+html {
+    font-size: 62.5%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    font-weight: normal;
+    color: black;
+}
+
+body { 
+    font-size: 2.5rem;
+    line-height: 1.6;
+    background:#D6EBF0;
+}
+
+.container {
+    width: 79.68%;
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cookie-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    max-height: 400px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.fortune {
+    font-family: 'Rokkitt', serif;
+    background: white;
+    // height: 70px;
+    min-width: 50%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0 3%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // overflow-wrap: break-word;
+    // word-wrap: break-word;
+    // hyphens: auto;
+    /* margin: 0 auto; */
+    margin: 20% auto;
+}
+
+.display-fortune {
+    // display: none;
+}
+
+.get-fortune {
+    background: black;
+    color: white;
+    margin: 3% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle {
+    background: black;
+    height: 15%;
+    min-width: 20%;
+    position: absolute;
+    p {
+        margin: 0; 
+    }
+}
+
+.rectangleTop {
+    top: 0;
+    left: 0;
+}
+
+.rectangleBottom {
+    bottom: 0;
+    left: 0;
+}
+
+.tweet-fortune,
+.restart {
+    display: block;
+    margin: 2% auto;   
+}
+
+.footer-socials div {
+    display: flex;
+    justify-content: space-between;
+    color: #bed0e9;
+}
+
+.footer-socials ul {
+    padding: 0;
+    li {
+        list-style: none;
+        display: inline-block; 
+        margin-left: 10px;
+    }
+    a {
+        color: #bed0e9;
+    }
+    :hover {
+        color: #9faab9af; 
+    }
+}
