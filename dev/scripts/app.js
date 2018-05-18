@@ -40,8 +40,12 @@ class App extends React.Component {
       <div>
         
           {/* add a ternary operator here saying: if showFortune = false show .cookie, if showFortune = true show .display-fortune */}
-          {/* {this.state.showFortune === true ? this.cookie : this.display-fortune} */}
-
+        showFortune ? (
+          return <div className="display-fortune" />
+         ) : (
+          return <div className="cookie" />
+        ) 
+        
         <main className="container">
 
           <div className="cookie">
