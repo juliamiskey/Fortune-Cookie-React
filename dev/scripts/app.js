@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-// import Cookie from './cookie';
-// import DisplayFortune from './display-fortune';
 import Footer from './footer';
 
 class App extends React.Component {
@@ -36,6 +34,7 @@ class App extends React.Component {
 
   }
   reset(e){
+    // The reset event function is so that way when the user clicks "Get a new Fortune" the page returns to .cookie and resets then calls for a new fortune from axios
     e.preventDefault();
     console.log(this.state.cookie)
     this.setState({
@@ -65,15 +64,11 @@ class App extends React.Component {
                 <p className="print-luckyNumbers"> Lucky Numbers: {this.state.cookie.lotto.numbers === undefined ? null : this.state.cookie.lotto.numbers} </p>
                 <div className="rectangle rectangleTop"> </div>
                 <div className="rectangle rectangleBottom"> </div>
+                <div className="square squareTop"> </div>
+                <div className="square squareBottom"> </div>
               </div>
             </div>
 
-
-
-          
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="btn tweet-fortune" data-text={this.state.cookie.fortune === undefined ? null : this.state.cookie.fortune.message} data-via="MiskeyJulia" data-hashtags="cohort18" data-show-count="false" data-size="large">
-                  Share your Fortune
-                </a>
 
                 <button className="btn restart" onClick={this.reset}>
                   Get a new Fortune

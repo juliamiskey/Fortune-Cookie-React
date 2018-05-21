@@ -13,7 +13,7 @@ html {
 }
 
 body { 
-    font-size: 2.5rem;
+    font-size: 2.5vh;
     line-height: 1.6;
     background:#D6EBF0;
 }
@@ -28,13 +28,6 @@ img {
     max-width: 100%;
 }
 
-.cookie-image {
-    display: block;
-    margin: 0 auto;
-    margin-top: 5%;
-    max-height: 400px;
-}
-
 .btn {
     padding: 14px 24px;
     border: 0 none;
@@ -42,33 +35,15 @@ img {
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+    letter-spacing: 3px;
+    // font-size: 3vh;
 }
 
-.paper {
-    text-align: center;
-}
-
-.fortune {
-    font-family: 'Rokkitt', serif;
-    background: white;
-    // height: 70px;
-    min-width: 50%;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    padding: 0 3%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // overflow-wrap: break-word;
-    // word-wrap: break-word;
-    // hyphens: auto;
-    /* margin: 0 auto; */
-    margin: 20% auto;
-}
-
-.display-fortune {
-    // display: none;
+.cookie-image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15vh;
+    max-height: 400px;
 }
 
 .get-fortune {
@@ -80,13 +55,30 @@ img {
     justify-content: center;
 }
 
+.paper {
+    text-align: center;
+}
+
+.fortune {
+    font-family: 'Rokkitt', serif;
+    background: white;
+    color: #003366;
+    min-width: 50vw;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0 3%;
+    margin: 14vh auto;
+    font-size: 3vh;
+}
+
 .rectangle {
-    background: black;
-    height: 15%;
+    background: #003366;
+    height: 3vh;
     min-width: 20%;
     position: absolute;
     p {
-        margin: 0; 
+        margin: 0;
     }
 }
 
@@ -100,16 +92,45 @@ img {
     left: 0;
 }
 
-.tweet-fortune,
+.square {
+    background: #003366;
+    height: 3vh;
+    min-width: 7%;
+    position: absolute;
+}
+
+.squareTop {
+    top: 0;
+    right: 0;
+}
+
+.squareBottom {
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 480px) {
+.print-luckyNumbers {
+    display: none
+    }
+}
+
+
 .restart {
     display: block;
     margin: 2% auto;   
 }
 
+.footer-socials {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .footer-socials div {
     border-top: 1px solid #9faab9af; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #bed0e9;
 }
 
